@@ -12,6 +12,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |
 */
 
-require_once __DIR__ . '\..\..\vendor/autoload.php';
-$dotenv = Dotenv\Dotenv::createImmutable(APPPATH);
+require_once FCPATH . 'vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(FCPATH);
 $dotenv->load();
